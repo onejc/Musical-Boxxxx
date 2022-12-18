@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins',
+            sans-serif;
+        }
+
+        .header {
+            background-color: #0E0003;
+            color: #F3F3F3;
+            text-decoration: none;
+            display: flex;
+            width: 100%;
+            padding: 16px 24px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-logo{
+            font-size: 32px;
+            font-family: 'Norwester',
+            sans-serif;
+        }
+        .top-logo a {
+            text-decoration: none;
+            color: #f6f6f6;
+        }
+        .top-icon {
+            display: flex;
+            align-items: center;
+            filter: invert();
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-left a {
+            height: 36px;
+            margin-right: 21px;
+        }
+        .icon-left a:nth-child(2) {
+            margin-right: 0;
+        }
+        .icon-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-right a{
+            height: 36px;
+            margin-right: 21px;
+        }
+        .icon-right a:nth-child(2) {
+            margin-right: 0;
+        }
+        .top-nav {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-nav a{
+            text-decoration: none;
+            margin-right: 75px;
+            font-size: 15px;
+            color: #f6f6f6;
+        }
+        .top-nav a:nth-child(3) {
+            margin-right: 0;
+        }
+        .hero-header {
+            height: 100vh;
+            width: 100vw;
+            background-image:
+            url(https://i.postimg.cc/BZ8WdQL9/image.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            color: #f3f3f3;
+            text-decoration: none;
+            margin-bottom: 124px;
+
+        }
+        .hero-header-in {
+            display: flex;
+            justify-content: space-between;
+            padding: 80px 94px 48px 94px;          
+        }
+        .hero-header-left {
+            display: flex; 
+            flex-direction: column;
+            float: left;
+        }
+        .hero-header-right {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-header-right {
+
+        }
+        .hero-header-top {
+            margin-bottom: 173px;
+            margin-top: 28px;
+        }
+        .hero-header h1 {
+            font-weight: normal;
+            font-size: 46px;
+            margin-bottom: 15px;
+        }
+        .hero-header h2 {
+            font-weight: normal;
+            font-style: 20px;
+            margin-bottom: 10px;
+        }
+        .like-box{
+            color: #f3f3f3;
+            text-decoration: none;
+            border: solid 2px #5e5e5e;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 36px;
+            border-radius: 3px;
+            float: left;
+        }
+        .like img{
+            opacity: 1;
+            filter: invert();
+            width: 17px;
+            margin-left: 14px;
+            margin-top: 5px;
+        }
+        .like-box h3 {
+            font-size: 15px;
+            margin-left: 5px;
+            font-weight: normal;
+            margin-left: 13px;
+        }
+        .share-box {
+            color: #f3f3f3;
+            text-decoration: none;
+            border: solid 2px #5e5e5e;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 36px;
+            border-radius: 3px;
+            float: left;
+        }
+        .share img {
+            opacity: 1;
+            filter: invert();
+            width: 17px;
+            margin-left: 14px;
+            margin-top: 5px;
+        }
+        .share-box h3 {
+            font-size: 13px;
+            margin-left: 5px;
+            font-weight: normal;
+        }
+        .hero-header-bottom {
+            display: flex;
+            justify-content: center;
+            margin-right: auto;
+        }
+        .hero-header-bottom h1 {
+            font-size: 14px;
+        }
+        .hero-header-bottom h2 {
+            font-size: 32px;
+        }
+        .box-box2 {
+            margin-left: 32px;
+        }
+        .hero-header-right {
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-header-right img {
+            border-radius: 3px;
+        }
+        .right-resrv{
+            color: #f3f3f3;
+            text-decoration: none;
+            background-color: #6A0018;
+            width: 283px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            margin-top: 5px;
+            border-radius: 3px;
+
+        }
+        .right-resrv h1 {
+            font-size: 18px;
+        }
+        .explan-bar {
+            margin-top: 124px;
+        }
+        ul.explan-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 1080px;
+            margin: 0 auto;
+            list-style: none;
+            background-color: #f6f6f6;
+        }
+        .explan-bar li:nth-child(1) {
+            border-top: 1px solid #666;
+            border-right: 1px solid #666;
+            border-left: 1px solid #666;
+            width: 25%;
+            text-align: center;
+        }
+        .explan-bar li:nth-child(2) {
+            border-bottom: 1px solid #000;
+            width: 25%;
+            text-align: center;
+        }
+        .explan-bar li:nth-child(3) {
+            border-bottom: 1px solid #000;
+            width: 25%;
+            text-align: center;
+        }
+        .explan-bar li:nth-child(4) {
+            border-bottom: 1px solid #000;
+            width: 25%;
+            text-align: center;
+        }
+        .explan-bar a {
+            text-decoration: none;
+            line-height: 40px;
+            color: black;
+        }
+        .explan1 {
+            text-align: left;
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 1080px;
+            height: 416px;
+            text-decoration: none;
+        }
+        .explan1 h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin-top: 42px;
+        }
+        .explan1 p {
+            margin-top: 16px;
+        }
+        .explan1-1 {
+            margin-top: 64px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            }
+        .explan1-1 a {
+            text-decoration: none;
+            color: black;
+        }
+        .explan1-1 img {
+            vertical-align: middle;
+            opacity: 60%;
+        }
+        .explan1 hr {
+            border: solid 1px #f6f6f6;
+            width: 1080px;
+            margin-bottom: 28px;
+        }
+        .explan2 {
+            box-sizing: border-box;
+            border: solid 0.5px #;
+            justify-content: center;
+            display: flex;
+            width:  1080px;
+            height: 404px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .explan2 h1 {
+            font-size: 16px;
+            margin-top: 24px;
+            font-weight: normal;
+        }
+        .explan2 p {
+            font-size: 30px;
+            text-decoration: none;
+            margin-bottom: 36px;
+        }
+        .explan2-1 {
+            border: solid 0.3px #000000;
+            width: 33%;
+        }
+        .explan2-2 {
+            border: solid 0.3px #000000;
+            width: 33%;
+        }
+        .explan2-2 img {
+            margin-top: 28px;
+            margin-bottom: 44px;
+        }
+        .explan2-3 {
+            border: solid 0.3px #000000;
+            width: 33%;
+        }
+        .explan2-3 img {
+            margin-top: 56px;
+        }
+        .explan3-1 {
+            box-sizing: border-box;
+            width: 1080px;
+            margin: 140px auto 24px auto;
+        }
+        .explan3-2:nth-child(6) {
+            margin-bottom: 200px;
+        }
+        .explan3-1 h1 {
+            font-size: 22px;
+            font-weight: normal;
+            display: flex;
+            text-align: left;
+        }
+        .explan3-2 {
+            display: flex;
+            justify-content: space-between;
+            vertical-align: middle;
+            align-items: center;
+            width: 1080px;
+            margin: 0 auto 46px auto;
+        }
+        .explan3-2left {
+            vertical-align: middle;
+        }
+        .explan3-2left img {
+            width: 40px;
+        }
+        .explan3-2right {
+            border: solid 1px black;
+            border-radius: 10px;
+            box-sizing: border-box;
+            width: 992px;
+            height: 84px;
+            display: flex;
+            align-items: center;
+        }
+        .explan3-2right p {
+            margin-left: 40px;
+        }
+        .explan3-2right p:nth-child(1) {
+            margin-left : 32px;
+        }
+        .explan3-2left p:nth-child(1) {
+/*            border: solid 1px red;*/
+        }
+        .explan3-2right h1 {
+            font-weight: normal;
+            font-size: 36px;
+            margin-left: 32px;
+        }
+        .explan3-2right img {
+            margin-left: 24px;
+        }
+        .bing-bang {
+            box-sizing: border-box;
+/*            border: solid 2px red;*/
+        }
+        .chu {
+            box-sizing: border-box;
+            width: 24px;
+            vertical-align: middle;
+            margin-left: 280px;
+            margin: auto 0 auto auto;
+/*            border: solid 2px red;*/
+        }
+        .chu img {
+            margin: 0 auto;
+        }
+        .chu p {
+            margin-left: 6px;
+        }
+
+
+
+        .footer {
+
+        }
+        .footer-top {
+            box-sizing: border-box;
+            width: 1080px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-nav {
+            width: 799px;
+            height: 19px;
+            justify-content: space-between;
+            display: flex;
+        }
+        .footer-nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+        .footer-nav li{
+          color: white;
+          list-style: none;
+          font-size: 18px;
+        }
+        .Q {
+            width: 105px;
+            height: 31px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 0.5px #bfbfbf;
+            border-radius: 15.5px;
+        }
+        .Q h1{
+            font-size: 13px;
+            margin-left: 11px;
+        }
+        .footer-bottom {
+            height: 54px;
+            margin: 53px auto 62px auto;
+            display: flex;
+            box-sizing: border-box;
+            width: 1080px;
+        }
+        .footer-bottom h1 {
+            font-family: norwester;
+            font-size: 32px;
+            color: #b8b8b8;
+        }
+        .footer-bottom h2 {
+            font-size: 13px;
+            font-weight: normal;
+            margin-left: 40px;
+        }
+        .footer-bottom a {
+            text-decoration: none;
+        }
+        .footer-icon {
+            justify-content: center;
+        }
+        .footer-icon {
+            margin-right: 0;
+            margin-left: auto;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="top-icon">
+            <div class="icon-left">
+                <a class="icon1" href="#"><img src="https://i.postimg.cc/0jyBFthN/menu-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+                <a class="icon2" href="#"><img src="https://i.postimg.cc/zX3Qkcnt/search-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+            </div>
+        </div>
+
+        <div class="top-nav">
+            <a href="#">뮤지컬</a>
+            <a href="#">예매</a>
+            <a href="#">극장</a>
+        </div>
+
+        <div class="top-logo">
+            <a href="index.html">MUSICAL ROOM</a>
+        </div>
+
+        <div class="top-nav">
+          <a href="#">이벤트</a>
+          <a href="#">스토어</a>
+          <a href="#">혜택</a>
+        </div>
+
+        <div class="top-icon">
+            <div class="icon-right">
+                <a class="icon3" href="#"><img src="https://i.postimg.cc/rpqCfDBV/calendar-month-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+                <a class="icon4" href="#"><img src="https://i.postimg.cc/dQhX2fRW/person-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-header">
+        <div class="hero-header-in">
+            <div class="hero-header-left">
+                <div class="hero-header-top">
+                    <h1>데스노트</h1>
+                    <h2>The Musical : DEATH NOTE</h2>
+                    <div class="like-box">
+                        <a href="#" class="like">
+                            <img src="https://i.postimg.cc/1tNY9rBk/favorite-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px">
+                        </a>
+                    <h3>301</h3>
+                    </div>
+                    <div class="share-box">
+                        <a href="#" class="share">
+                            <img src="https://i.postimg.cc/nrk16vPf/share-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px">
+                        </a>
+                    <h3>공유하기</h3>
+                    </div>
+                </div>
+                <div class="hero-header-bottom">
+                    <div class="box-box1">
+                        <h1>11월 예매율</h1>
+                        <h2>1위</h2>
+                    </div>
+                    <div class="box-box2">
+                        <h1>누적 개봉수</h1>
+                        <h2>4회</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-header-right">
+                <img src="https://i.postimg.cc/FsDj3mpz/image.png" alt="" width="283px" height="374px">
+                <div class="right-resrv">
+                    <h1>예매</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explan">
+        <ul class="explan-bar">
+            <li><a href="#">주요정보</a></li>
+            <li><a href="#">실관람평</a></li>
+            <li><a href="#">포스트</a></li>
+            <li><a href="#">프레스콜</a></li>
+        </ul>
+        <div class="explan1">
+            <h1>꿈꾸는 천재 고등학생 ‘야가미 라이토’는 어느 날 우연히 데스노트를 줍게 된다.</h1>
+            <p>'이 노트에 이름이 적힌 자는 죽는다'는 문구에 반신반의하며 TV뉴스에 방영된 유괴범의 이름을 적게 되는데…</br>노트의 힘을 알게 된 라이토는 자신의 손으로 범죄자를 처단하고 이상적인 세계를 만들어 가기로 결심한다.</br>세계 각지의 범죄자들이 의문의 심장마비로 사망하자 인터폴에서 이 사건을 수사하기 위해 천재 탐정 수사관을 경찰청으로 보낸다. </p>
+            <div class="explan1-1">
+                <a href="#">더보기</a>
+                <img src="https://i.postimg.cc/85gv4VnH/expand-more-FILL0-wght400-GRAD0-opsz48.png" alt="" width="40px" height="17px">
+            </div>
+            <hr align="center">
+            <p><b>제작</b> : HORIRPO</br><b>연출</b> : 쿠리야마 타미야&nbsp;&nbsp;<b> 작사</b> : 잭머피&nbsp;&nbsp;<b> 작곡</b> : 프랭크 와일드혼</br><b>관람시간</b> : 180분</p>
+        </div>
+
+        <div class="explan2">
+            <div class="explan2-1">
+                <h1>관람포인트</h1>
+                <p>스토리 ∙ ost</p>
+                <img src="https://i.postimg.cc/B6z2kC8F/image.png" alt="" width="248px" height="216px">
+            </div>
+            <div class="explan2-2">
+                <h1>실관람 평점</h1>
+                <img src="https://i.postimg.cc/BbMbRS7V/image.png" alt="" width="144px">
+                <p>예매율</br>3.3%</p>
+            </div>
+            <div class="explan2-3">
+                <h1>수상이력</h1>
+                <img src="https://i.postimg.cc/3rBb5q52/trophy.png" alt="" width="180px">
+            </div>
+        </div>
+
+        <div class="explan3">
+            <div class="explan3-1">
+                <h1>데스노트에 대한 3,492개의 이야기가 있어요!</h1>
+            </div>
+            <div class="after">
+                <div class="explan3-2">
+                    <div class="explan3-2left">
+                        <img src="https://i.postimg.cc/BbpZff2j/image.png" alt="">
+                        <p>dlwp**</p>
+                    </div>
+                    <div class="explan3-2right">
+                        <p>관람평</p>
+                        <h1>9</h1>
+                        <p>류정환&nbsp;&nbsp;윤공주</br>김봉환&nbsp;&nbsp;민경아</p>
+                        <img src="https://i.postimg.cc/kXstNk6Y/image.png" alt="">
+                        <div class="bing-bang">
+                            <p>영화보다 재밌어요..!</p>
+                        </div>
+                        <div class="chu">
+                            <a href="#"><img src="https://i.postimg.cc/Qdh8xtfH/recommend-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px"></a>
+                            <p>0</p>
+                        </div>
+                        <img src="https://i.postimg.cc/zBs5mXLD/more-vert-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px">
+                    </div>
+                </div>
+                <div class="explan3-2">
+                    <div class="explan3-2left">
+                        <img src="https://i.postimg.cc/BbpZff2j/image.png" alt="">
+                        <p>djsmejt**</p>
+                    </div>
+                    <div class="explan3-2right">
+                        <p>관람평</p>
+                        <h1>9</h1>
+                        <p>홍광호&nbsp;&nbsp;선민</br>윤영석&nbsp;&nbsp;이지혜</p>
+                        <img src="https://i.postimg.cc/kXstNk6Y/image.png" alt="">
+                        <div class="bing-bang">
+                            <p>홍광호씨 노래 너무 좋아요..!</p>
+                        </div>
+                        <div class="chu">
+                            <a href="#"><img src="https://i.postimg.cc/Qdh8xtfH/recommend-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px"></a>
+                            <p>2</p>
+                        </div>
+                        <img src="https://i.postimg.cc/zBs5mXLD/more-vert-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px">
+                    </div>
+                </div>
+                <div class="explan3-2">
+                    <div class="explan3-2left">
+                        <img src="https://i.postimg.cc/BbpZff2j/image.png" alt="">
+                        <p>whdrkddl**</p>
+                    </div>
+                    <div class="explan3-2right">
+                        <p>관람평</p>
+                        <h1>8</h1>
+                        <p>신성록&nbsp;&nbsp;선민</br>윤영석&nbsp;&nbsp;민경아</p>
+                        <img src="https://i.postimg.cc/kXstNk6Y/image.png" alt="">
+                        <div class="bing-bang">
+                            <p>취향저격..</p>
+                        </div>
+                        <div class="chu">
+                            <a href="#"><img src="https://i.postimg.cc/Qdh8xtfH/recommend-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px"></a>
+                            <p>0</p>
+                        </div>
+                        <img src="https://i.postimg.cc/zBs5mXLD/more-vert-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px">
+                    </div>
+                </div>
+                <div class="explan3-2">
+                    <div class="explan3-2left">
+                        <img src="https://i.postimg.cc/BbpZff2j/image.png" alt="">
+                        <p>ekrk**</p>
+                    </div>
+                    <div class="explan3-2right">
+                        <p>관람평</p>
+                        <h1>6</h1>
+                        <p>신성록&nbsp;&nbsp;해나</br>윤영석&nbsp;&nbsp;최수진</p>
+                        <img src="https://i.postimg.cc/kXstNk6Y/image.png" alt="">
+                        <div class="bing-bang">
+                            <p>고냥 저냥 재밌어요</p>
+                        </div>
+                        <div class="chu">
+                            <a href="#"><img src="https://i.postimg.cc/Qdh8xtfH/recommend-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px"></a>
+                            <p>0</p>
+                        </div>
+                        <img src="https://i.postimg.cc/zBs5mXLD/more-vert-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px">
+                    </div>
+                </div>
+                <div class="explan3-2">
+                    <div class="explan3-2left">
+                        <img src="https://i.postimg.cc/BbpZff2j/image.png" alt="">
+                        <p>rrlfrrlf**</p>
+                    </div>
+                    <div class="explan3-2right">
+                        <p>관람평</p>
+                        <h1>8</h1>
+                        <p>홍광호&nbsp;&nbsp;아이비</br>김봉환&nbsp;&nbsp;조정은</p>
+                        <img src="https://i.postimg.cc/kXstNk6Y/image.png" alt="">
+                        <div class="bing-bang">
+                            <p>시간가는줄 모르고 봤어요~</p>
+                        </div>
+                        <div class="chu">
+                            <a href="#"><img src="https://i.postimg.cc/Qdh8xtfH/recommend-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px"></a>
+                            <p>2</p>
+                        </div>
+                        <img src="https://i.postimg.cc/zBs5mXLD/more-vert-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px">
+                    </div>
+                </div>
+                <div class="explan3-2">
+                    <div class="explan3-2left">
+                        <img src="https://i.postimg.cc/BbpZff2j/image.png" alt="">
+                        <p>dhspdyd**</p>
+                    </div>
+                    <div class="explan3-2right">
+                        <p>관람평</p>
+                        <h1>7</h1>
+                        <p>박은태&nbsp;&nbsp;윤공주</br>윤영석&nbsp;&nbsp;조정은</p>
+                        <img src="https://i.postimg.cc/kXstNk6Y/image.png" alt="">
+                        <div class="bing-bang">
+                            <p>애인보단 친구랑 보기 좋은거 같아요!!</p>
+                        </div>
+                        <div class="chu">
+                            <a href="#"><img src="https://i.postimg.cc/Qdh8xtfH/recommend-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px"></a>
+                            <p>1</p>
+                        </div>
+                        <img src="https://i.postimg.cc/zBs5mXLD/more-vert-FILL0-wght400-GRAD0-opsz48.png" alt="" width="24px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <ul class="footer-nav">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">제휴/광고/부대사업문의</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">위치가반서비스 이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+
+            <div class="Q">
+                <img src="https://i.postimg.cc/zX3Qkcnt/search-FILL0-wght400-GRAD0-opsz40.png" alt="" width="15px" height="15px">
+                <h1>극장찾기</h1>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <h1>MUSICAL ROOM</h1>
+            <h2>경기도 시흥시 산기대학로 237, A동 4층<br>대표자명 조원재 · 개인정보보호책임자 조원제 · 사업자등록번호 111-11-11111<br>COPYRIGHT © Wonjaecho, Inc. All rights reserved</h2>
+            <div class="footer-icon">
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-youtubeN.png" alt="" width="31px" height="31px">
+                </a>
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-instagramN.png" alt="" width="31px" height="31px">
+                </a>
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-facebookN.png" alt="" width="31px" height="31px">
+                </a>
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-twitterN.png" alt="" width="31px" height="31px">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

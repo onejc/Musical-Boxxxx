@@ -1,0 +1,607 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+  	<meta charset="utf-8">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+                
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins',
+            sans-serif;
+        }
+
+        .header {
+            background-color: #0E0003;
+            color: #F3F3F3;
+            text-decoration: none;
+            display: flex;
+            width: 100%;
+            padding: 16px 24px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-logo{
+            text-decoration: none;
+            font-size: 32px;
+            font-family: 'Norwester',
+            sans-serif;
+        }
+        .top-logo a{
+            text-decoration: none;
+            color: #f6f6f6;
+        }
+        .top-icon{
+            display: flex;
+            align-items: center;
+            filter: invert();
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-left a {
+            height: 36px;
+            margin-right: 21px;
+        }
+        .icon-left a:nth-child(2) {
+            margin-right: 0;
+        }
+        .icon-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-right a{
+            height: 36px;
+            margin-right: 21px;
+        }
+        .icon-right a:nth-child(2) {
+            margin-right: 0;
+        }
+        .top-nav {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-nav a{
+            text-decoration: none;
+            margin-right: 75px;
+            font-size: 15px;
+            color: #f6f6f6;
+        }
+        .top-nav a:nth-child(3) {
+            margin-right: 0;
+        }
+
+        .hero-header{
+            height: 118vh;
+            width: 100vw;
+
+            background-image:
+            url(https://i.postimg.cc/6pHR9M7Z/image.png;);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .poster{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #more1{
+            margin-top: 83px;
+            font-size: 16px;
+            color: #eaeaea;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: underline;
+            text-underline-position: under;
+            text-underline-offset: 10px;
+            text-decoration-color: #878787;
+        }
+        .min{
+            text-align: center;
+        }
+
+        .plus{
+            margin-bottom: 33px;
+            margin-left: 1020px;
+            display: inline-block;
+            align-content: center;
+            gap: 7px;
+        }
+
+        #more2{
+            margin-top: 0;
+            color: #ffffff;
+            opacity: 0.6;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 0px;
+        }
+        .icon5 {
+            opacity: 0.6;
+            filter: invert();
+        }
+        .poster-box{
+            width: 1140px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            gap: 53px;
+            clear: both;
+        }
+        .poster1 img:hover {
+            content: url(https://i.postimg.cc/LXsXdqGF/1.png);
+        }
+        .poster2 img:hover {
+            content: url(https://i.postimg.cc/nhRBwQdB/2.png);
+        }
+        .poster3 a img:hover {
+            content: url(https://i.postimg.cc/Zq9m61Bp/3.png);
+        }
+        .poster4 a img:hover {
+            content: url(https://i.postimg.cc/hjqYhw9S/4.png);
+        }
+        .post img{
+           border-radius: 10px;
+        }
+        .po1{
+            color: #f3f3f3;
+            text-decoration: none;
+            border: solid 2px #5e5e5e;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            width: 80px;
+            height: 36px;
+            border-radius: 3px;
+            float: left;
+        }
+        .po1 img{
+            opacity: 1;
+            filter: invert();
+            width: 17px;
+            margin-left: 14px;
+            margin-top: 5px;
+        }
+        .po1 h1{
+            font-size: 13px;
+            margin-left: 5px;
+        }
+        .resrv{
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #6A0018;
+            width: 160px;
+            height: 36px;
+            float: left;
+            text-align: center;
+            line-height: 36px;
+            margin-left: 5px;
+            border-radius: 3px;
+        }
+        .resrv h1{
+            font-size: 15px;
+        }
+        .resrv a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .pikachu {
+            width: 1140px;
+            height: 75px;
+            background-color: #0D0003;
+            opacity: 0.6;
+            margin: 50px auto 0 auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .mb1 {
+            border-right: 1px solid #f3f3f3;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            width: inherit;
+        }
+        .mb1:nth-child(4) {
+            border-right: none;
+        }
+        .mb1 h1{
+            text-decoration: none;
+            color: #F3F3F3;
+            opacity: 0.6;
+            font-size: 15px;
+        }
+        .mb1 img{
+            filter: invert();
+            width: 24px;
+            opacity: 0.6;
+
+        }
+        .pichu {
+            background-image:
+            url(https://i.postimg.cc/LXTCCLdc/image.png);
+            width: 100vw;
+            height: 100vh;
+        }
+        .pichu img {
+            border-radius: 7px;
+        }
+        .pichu-box1 {
+            width: 1136px;
+            height: 48px;
+            margin: 58px auto 8px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pichu-box1 h1 {
+            font-size: 30px;
+            border: none;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .pichu-box1 img{
+            margin-top: auto;
+        }
+        .pichu-box2 {
+            width: 683px;
+            height: 230px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pichu-box3 {
+            width: 683px;
+            height: 204px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pichu-pichu {
+            width: 683px;
+            height: 453px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction:column;
+        }
+        .pichu3 {
+            display: flex;
+            width: 1140px;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .egg {
+            width: 977px;
+            height: 94px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 74px auto;
+
+        }
+        .egg-con {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .egg h1 {
+            text-decoration: none;
+            color: #f3f3f3;
+            font-size: 15px;
+            font-weight: normal;
+            margin-top: 26px;
+        }
+        .egg img {
+            filter: invert();
+        }
+        .footer {
+
+        }
+        .footer-top {
+            box-sizing: border-box;
+            width: 1080px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-nav {
+            width: 799px;
+            height: 19px;
+            justify-content: space-between;
+            display: flex;
+        }
+        .footer-nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+        .footer-nav li{
+          color: white;
+          list-style: none;
+          font-size: 18px;
+        }
+        .Q {
+            width: 105px;
+            height: 31px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 0.5px #bfbfbf;
+            border-radius: 15.5px;
+        }
+        .Q h1{
+            font-size: 13px;
+            margin-left: 11px;
+        }
+        .footer-bottom {
+            height: 54px;
+            margin: 53px auto 62px auto;
+            display: flex;
+            box-sizing: border-box;
+            width: 1080px;
+        }
+        .footer-bottom h1 {
+            font-family: norwester;
+            font-size: 32px;
+            color: #b8b8b8;
+        }
+        .footer-bottom h2 {
+            font-size: 13px;
+            font-weight: normal;
+            margin-left: 40px;
+        }
+        .footer-bottom a {
+            text-decoration: none;
+        }
+        .footer-icon {
+            justify-content: center;
+        }
+        .footer-icon {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+        <div class="top-icon">
+            <div class="icon-left">
+                <a class="icon1" href="#"><img src="https://i.postimg.cc/0jyBFthN/menu-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+                <a class="icon2" href="#"><img src="https://i.postimg.cc/zX3Qkcnt/search-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+            </div>
+        </div>
+
+        <div class="top-nav">
+            <a href="#">뮤지컬</a>
+            <a href="#">예매</a>
+            <a href="#">극장</a>
+        </div>
+
+        <div class="top-logo">
+            <a href="index.html">MUSICAL ROOM</a>
+        </div>
+
+        <div class="top-nav">
+          <a href="#">이벤트</a>
+          <a href="#">스토어</a>
+          <a href="#">혜택</a>
+        </div>
+
+        <div class="top-icon">
+            <div class="icon-right">
+                <a class="icon3" href="#"><img src="https://i.postimg.cc/rpqCfDBV/calendar-month-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+                <a class="icon4" href="#"><img src="https://i.postimg.cc/dQhX2fRW/person-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="36px"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-header">
+
+        <div class="poster">
+            <a href="#" id="more1">대표작품</a>
+        </div>
+        <div class="min">
+            <div class="plus">
+                <a href="#" id="more2">더 많은 작품보기</a>
+                <a class="icon5" href="#"><img src="https://i.postimg.cc/s2dfVNTT/add-FILL0-wght400-GRAD0-opsz40.png" alt="logo" width="16px"></a>
+            </div>
+        </div>
+
+        <div class="poster-box">
+            <div class="post">
+                <div class="poster1">
+                    <a href="secondpage(zh).html"><img src="https://i.postimg.cc/9ftyjSdh/image.png" alt="" width="245px" height="352px">
+                    </a>
+                </div>
+                <div class="po1">
+                    <a href="#" class="po15">
+                        <img src="https://i.postimg.cc/1tNY9rBk/favorite-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px">
+                    </a>
+                    <h1>907</h1>
+                </div>
+                <div class="resrv">
+                    <a href="#"><h1>예매</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="poster2">
+                    <a href="secondpage(ml).html"><img src="https://i.postimg.cc/ZqcvQNmY/image.png" alt="" width="245px" height="352px">
+                    </a>
+                </div>
+                <div class="po1">
+                    <a href="#" class="po15">
+                        <img src="https://i.postimg.cc/1tNY9rBk/favorite-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px">
+                    </a>
+                    <h1>907</h1>
+                </div>
+                <div class="resrv">
+                    <a href="#"><h1>예매</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="poster3">
+                    <a href="secondpage(m).html"><img src="https://i.postimg.cc/Dfs4VRnY/image.png" alt="" width="245px" height="352px">
+                    </a>
+                </div>
+                <div class="po1">
+                    <a href="#" class="po15">
+                        <img src="https://i.postimg.cc/1tNY9rBk/favorite-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px">
+                    </a>
+                    <h1>907</h1>
+                </div>
+                <div class="resrv">
+                    <a href="#"><h1>예매</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="poster4">
+                    <a href="secondpage(dn).html"><img src="https://i.postimg.cc/fbjqg8k3/image.png" alt="" width="245px" height="352px">
+                    </a>
+                </div>
+                <div class="po1">
+                    <a href="#" class="po15">
+                        <img src="https://i.postimg.cc/1tNY9rBk/favorite-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px">
+                    </a>
+                    <h1>907</h1>
+                </div>
+                <div class="resrv">
+                    <a href="#"><h1>예매</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pikachu">
+            <div class="mb1">
+                <h1>뮤지컬 명을 입력하세요</h1>
+                <img src="https://i.postimg.cc/zX3Qkcnt/search-FILL0-wght400-GRAD0-opsz40.png" alt="" width="18px">
+            </div>     
+            <div class="mb1">
+                <img src="https://i.postimg.cc/rpqCfDBV/calendar-month-FILL0-wght400-GRAD0-opsz40.png">
+                <h1>일별 뮤지컬</h1>
+            </div>
+            <div class="mb1">
+                <img src="https://i.postimg.cc/cHT4SzMJ/star-FILL0-wght400-GRAD0-opsz40.png">
+                <h1>순위표</h1>
+            </div>
+            <div class="mb1">
+                <img src="https://i.postimg.cc/SRTsWPJP/confirmation-number-FILL0-wght400-GRAD0-opsz40.png">
+                <h1>빠른 예매</h1>
+            </div>   
+        </div>
+    </div>
+
+    <div class="pichu">
+        <div class="pichu-box1">
+            <h1>혜택</h1>
+            <img src="https://i.postimg.cc/s2dfVNTT/add-FILL0-wght400-GRAD0-opsz40.png" alt="" width="16px"
+            height="16px">
+        </div>
+        <div class="pichu3">
+            <div class="pichu-pichu">
+                <div class="pichu-box2">
+                    <img src="https://i.postimg.cc/Xqsp8wf1/image.png" alt="" width="300px" height="230px">
+                    <img src="https://i.postimg.cc/W1HYyCpT/image.png" alt="" width="360px" height="230px">
+                </div>
+                <div class="pichu-box3">
+                    <img src="https://i.postimg.cc/T1LZ7xg8/image.png" alt="" width="441px" height="204px">
+                    <img src="https://i.postimg.cc/Wp8nKCSC/image.png" alt="" width="204px" height="204px">
+                </div>
+            </div>
+            <div class="pichu-box4">
+                <img src="https://i.postimg.cc/66bWM5sP/image.png" alt="" width="415px" height="453px">
+            </div>
+        </div>
+        <div class="egg">
+            <div class="egg-con">
+                <img src="https://i.postimg.cc/YSG34xc3/diamond-FILL0-wght400-GRAD0-opsz40.png" alt="" width="50px" height="50px">
+                <h1>LOUNGE</h1>
+            </div>
+            <div class="egg-con">
+                <img src="https://i.postimg.cc/3xMJ588x/credit-card-FILL0-wght400-GRAD0-opsz40.png" alt="" width="50px" height="50px">
+                <h1>제휴할인 안내</h1>
+            </div>
+            <div class="egg-con">
+                <img src="https://i.postimg.cc/g2Pdtgsw/redeem-FILL0-wght400-GRAD0-opsz40.png" alt="" width="50px" height="50px">
+                <h1>이벤트</h1>
+            </div>
+            <div class="egg-con">
+                <img src="https://i.postimg.cc/Ls9S2hr2/shopping-bag-FILL0-wght400-GRAD0-opsz40.png" alt="" width="50px" height="50px">
+                <h1>굿즈 스토어</h1>
+            </div>
+            <div class="egg-con">
+                <img src="https://i.postimg.cc/x1RCvrQj/stars-FILL0-wght400-GRAD0-opsz40.png" alt="" width="50px" height="50px">
+                <h1>멤버</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <ul class="footer-nav">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">제휴/광고/부대사업문의</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">위치가반서비스 이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+
+            <div class="Q">
+                <img src="https://i.postimg.cc/zX3Qkcnt/search-FILL0-wght400-GRAD0-opsz40.png" alt="" width="15px" height="15px">
+                <h1>극장찾기</h1>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <h1>MUSICAL ROOM</h1>
+            <h2>경기도 시흥시 산기대학로 237, A동 4층<br>대표자명 조원재 · 개인정보보호책임자 조원제 · 사업자등록번호 111-11-11111<br>COPYRIGHT © Wonjaecho, Inc. All rights reserved</h2>
+            <div class="footer-icon">
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-youtubeN.png" alt="" width="31px" height="31px">
+                </a>
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-instagramN.png" alt="" width="31px" height="31px">
+                </a>
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-facebookN.png" alt="" width="31px" height="31px">
+                </a>
+                <a href="#">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-twitterN.png" alt="" width="31px" height="31px">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+  </body>
+
+  </html>
